@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administrador.master.cs" Inherits="ProyectoEcommerceNw.Administrador" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA COLONIA - Colombia</title>
+    <!-- Importación segura de CSS -->
+<link rel="stylesheet" href="estilos/estilo.css" type="text/css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Header con HTML5 semántico -->
+        <header class="main-header">
+            <div class="header-content">
+                <h1>LA COLONIA</h1>
+                <p class="subtitle">Chargé de la Colombie</p>
+            </div>
+            
+            <!-- Nav HTML5 -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="Catalogo.aspx" class="nav-link">Catálogo</a></li>
+                    <li><a href="Carrito.aspx" class="nav-link">Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <h2>LA COLONIA</h2>
+                <div class="footer-nav">
+                    <a href="#">MENÚ</a>
+                    <a href="#">INFORMACIÓN DE TIENDA</a>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
