@@ -1,47 +1,69 @@
-﻿/* Reset HTML5 compatible */
+﻿
 html {
     box-sizing: border-box;
     font-size: 16px;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #8EC33D;
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header styles */
+
 .main-header {
-    background-color: #2e8b57;
+    background-color: #8EC33D; 
     color: white;
-    text-align: center;
     padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.header-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+    .header-content h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+.logo {
+    width: 70px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
 .subtitle {
     font-style: italic;
-    opacity: 0.9;
+    font-size: 1rem;
 }
 
-/* Navigation */
+
 .main-nav {
-    background-color: #228b22;
+    background-color: #8EC33D; 
     padding: 0.8rem 0;
 }
 
@@ -49,7 +71,10 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 0;
 }
 
 .nav-link {
@@ -57,70 +82,107 @@ body {
     text-decoration: none;
     font-weight: 600;
     padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.2);
     transition: all 0.3s ease;
     display: inline-block;
 }
 
-    .nav-link:hover {
-        background-color: rgba(255,255,255,0.2);
-        transform: translateY(-2px);
+    .nav-link:hover,
+    .nav-link:focus {
+        background-color: rgba(0,0,0,0.3);
+        outline: none;
     }
 
-/* Main content */
+
 .main-content {
     flex: 1;
-    padding: 2rem 1rem;
+    padding: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
 
-/* Footer */
+
 .main-footer {
-    background-color: #228b22;
+    background-color: #8EC33D; 
     color: white;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     text-align: center;
     margin-top: auto;
 }
 
-.footer-content h2 {
-    margin-bottom: 1rem;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+    .footer-content h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
 
 .footer-nav {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
     .footer-nav a {
         color: white;
         text-decoration: none;
-        font-weight: 600;
         padding: 0.5rem;
     }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    html {
-        font-size: 14px;
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+    .social-media a {
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+@media screen and (max-width: 768px) {
+    .header-content h1 {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
     }
 
     .nav-list {
         flex-direction: column;
-        gap: 0.5rem;
         align-items: center;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
     }
 
     .footer-nav {
         flex-direction: column;
-        gap: 0.5rem;
     }
 }
 
-.contenedor-flex {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
 }

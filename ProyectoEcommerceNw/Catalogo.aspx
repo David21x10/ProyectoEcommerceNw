@@ -4,7 +4,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" >
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
     <link href='<%= ResolveUrl("~/estilos/estilos.css") %>' rel="stylesheet" type="text/css" />
+    <h2 style="text-align: center; color: #2e8b57; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 20px;">
+        Catálogo de productos
+    </h2>
     <div style="display: flex; flex-wrap: wrap; gap: 20px;">
         <asp:Repeater ID="rptCatalogo" runat="server" OnItemCommand="rptCatalogo_ItemCommand">
             <ItemTemplate>

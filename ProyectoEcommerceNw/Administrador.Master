@@ -6,21 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA COLONIA - Colombia</title>
-    <!-- Importación segura de CSS -->
-<link rel="stylesheet" href="estilos/styleadm.css" type="text/css">
+    <link rel="stylesheet" href="estilos/styleadm.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <!-- Header con HTML5 semántico -->
         <header class="main-header">
             <div class="header-content">
-                <h1>LA COLONIA</h1>
-                <p class="subtitle">Chargé de la Colombie</p>
+                &nbsp;<h1>
+                <img src="img/Logo.png" alt="Logo de La Colonia" class="logo">LA COLONIA</h1>
+                <p class="subtitle">Precios bajos siempre... solo en tu Colonia</p>
             </div>
-            
-            <!-- Nav HTML5 -->
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="Catalogo.aspx" class="nav-link">Catálogo</a></li>
@@ -29,19 +27,35 @@
             </nav>
         </header>
 
-        <!-- Main content -->
+        
         <main class="main-content">
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </main>
 
-        <!-- Footer -->
+       
         <footer class="main-footer">
             <div class="footer-content">
                 <h2>LA COLONIA</h2>
                 <div class="footer-nav">
                     <a href="#">MENÚ</a>
                     <a href="#">INFORMACIÓN DE TIENDA</a>
+                </div>
+
+                
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
         </footer>
