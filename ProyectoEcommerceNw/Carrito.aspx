@@ -1,19 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Administrador.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="ProyectoEcommerceNw.Carrito" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href='<%= ResolveUrl("~/estilos/estilo.css") %>' rel="stylesheet" type="text/css" />
+<link href="estilos/estilo.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container mt-5 text-center">
 
      
-        <h1 style="color: #2e8b57; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-            Carrito de Compras 
-        </h1>
-        <p style="margin-bottom: 30px; color: #555;">
-            Revisa los productos seleccionados antes de proceder con tu compra.
-        </p>
-
+        <h1 class="titulo-carrito">Carrito de Compras</h1>
+         <p class="descripcion-carrito">
+            Revisa los productos seleccionados antes de proceder con tu compra.</p>
 
         <asp:Repeater ID="rptCarrito" runat="server" OnItemCommand="rptCarrito_ItemCommand">
             <ItemTemplate>
@@ -44,6 +40,8 @@
         <div class="mt-4">
             <asp:Label ID="lblTotal" runat="server" CssClass="h4 text-success fw-bold" />
         </div>
+
+        <asp:Button ID="btnPagar" runat="server" Text="Pagar ahora" CssClass="btn-pagar" OnClientClick="alert('Grcias por su compra'); return false;" />
 
     </div>
 </asp:Content>

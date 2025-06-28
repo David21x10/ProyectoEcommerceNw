@@ -1,4 +1,4 @@
-﻿/*ESTILOS DE CATALAGO*/
+﻿/* ESTILOS DE CATALOGO */
 .card-producto {
     width: 250px;
     border: 1px solid #ddd;
@@ -14,6 +14,7 @@
 
     .card-producto p {
         color: #888;
+        margin: 0;
     }
 
     .card-producto .precio {
@@ -29,6 +30,11 @@
     margin-bottom: 10px;
 }
 
+.txt-cantidad {
+    width: 40px;
+    text-align: center;
+}
+
 .boton-verde {
     background-color: #2e8b57;
     color: white;
@@ -38,10 +44,25 @@
     cursor: pointer;
 }
 
-.txt-cantidad {
-    width: 40px;
+.titulo-catalogo {
     text-align: center;
+    color: #2e8b57;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 24px;
 }
+
+.btn-mas-menos {
+    width: 30px;
+    text-align: center;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 
 /* Estilos para el carrito */
@@ -66,7 +87,7 @@
 h2 {
     color: #2e8b57;
     margin-bottom: 20px;
-    margin-top: 0; /* para que quede más arriba */
+    margin-top: 0; 
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 2.5rem; 
@@ -172,3 +193,35 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
+.titulo-carrito {
+    color: #2e8b57;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descripcion-carrito {
+    margin-bottom: 30px;
+    color: #555;
+}
+.btn-pagar {
+    background-color: #8ec33d;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.3);
+}
+
+    .btn-pagar:hover {
+        background-color: #7cd07c;
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 128, 0, 0.5);
+    }
+
+    .btn-pagar:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2);
+    }

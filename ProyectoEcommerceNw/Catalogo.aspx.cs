@@ -32,6 +32,7 @@ namespace ProyectoEcommerceNw
             rptCatalogo.DataBind();
         }
 
+
         protected void rptCatalogo_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             if (e.CommandName == "Mas" || e.CommandName == "Menos")
@@ -64,8 +65,8 @@ namespace ProyectoEcommerceNw
                     carrito.Rows.Add(fila);
                     Session["Carrito"] = carrito;
                 }
+                Response.Write("<script>alert('Producto agregado al carrito')</script>");
 
-                
             }
         }
     }

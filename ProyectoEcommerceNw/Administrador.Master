@@ -5,7 +5,7 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA COLONIA - Colombia</title>
+    <title>LA COLONIA</title>
     <link rel="stylesheet" href="estilos/styleadm.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <asp:ContentPlaceHolder id="head" runat="server">
@@ -36,7 +36,7 @@
        
         <footer class="main-footer">
             <div class="footer-content">
-                <h2>LA COLONIA</h2>
+                <h2 id="titulofoot" class="h2Foot">LA COLONIA</h2>
                 <div class="footer-nav">
                     <a href="#">MENÚ</a>
                     <a href="#">INFORMACIÓN DE TIENDA</a>
