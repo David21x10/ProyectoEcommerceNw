@@ -5,7 +5,7 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA COLONIA</title>
+    <title>JETSTEREO</title>
     <link rel="stylesheet" href="estilos/styleadm.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <asp:ContentPlaceHolder id="head" runat="server">
@@ -14,15 +14,27 @@
 <body>
     <form id="form1" runat="server">
         <header class="main-header">
-            <div class="header-content">
-                &nbsp;<h1>
-                <img src="img/Logo.png" alt="Logo de La Colonia" class="logo">LA COLONIA</h1>
-                <p class="subtitle">Precios bajos siempre... solo en tu Colonia</p>
-            </div>
+        <div class="header-content">
+            <h1><img src="img/Jeststereo.jpg" alt="Logo de Jestereo" class="logo">JETSTEREO</h1>
+            <p class="subtitle">El futuro está aquí.</p>
+
+            <div class="user-dropdown">
+    <div class="user-toggle">
+        <asp:Label ID="lblUsuario" runat="server" CssClass="user-name" />
+        ▼
+    </div>
+    <div class="user-menu">
+        <asp:LinkButton ID="btnLogout" runat="server" Text="Cerrar sesión" OnClick="btnLogout_Click" CssClass="logout-btn" />
+    </div>
+</div>
+        </div>
+
             <nav class="main-nav">
                 <ul class="nav-list">
+                    <li><a href="Inicio.aspx" class="nav-link">Inicio</a></li>
                     <li><a href="Catalogo.aspx" class="nav-link">Catálogo</a></li>
                     <li><a href="Carrito.aspx" class="nav-link">Carrito</a></li>
+                    <li><a id="linkLogin" runat="server" href="Login.aspx" class="nav-link">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,7 +48,7 @@
        
         <footer class="main-footer">
             <div class="footer-content">
-                <h2 id="titulofoot" class="h2Foot">LA COLONIA</h2>
+                <h2 id="titulofoot" class="h2Foot">JETSTEREO</h2>
                 <div class="footer-nav">
                     <a href="#">MENÚ</a>
                     <a href="#">INFORMACIÓN DE TIENDA</a>

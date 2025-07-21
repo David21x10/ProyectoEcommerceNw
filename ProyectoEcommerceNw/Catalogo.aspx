@@ -8,17 +8,16 @@
 
 <link href="estilos/estilo.css" rel="stylesheet" type="text/css" />
 
-<h2 class="titulo-catalogo">
-    Catálogo de productos
-</h2>
+<h2 class="titulo-catalogo">Catálogo de productos</h2>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
     <asp:Repeater ID="rptCatalogo" runat="server" OnItemCommand="rptCatalogo_ItemCommand">
         <ItemTemplate>
             <div class="card-producto">
                 <h3><%# Eval("NomPro") %></h3>
+                <p class="oculto">ID Producto: <%# Eval("IdPro") %></p>
                 <p><%# Eval("DesPro") %></p>
-                <p class="precio">L. <%# Eval("PrePro", "{0:N2}") %></p>
+                <p class="precio">L <%# Eval("PrePro", "{0:N2}") %></p>
 
                 <div class="cantidad-controls">
                     <asp:LinkButton ID="btnMenos" runat="server" Text="−" CommandName="Menos" CommandArgument='<%# Container.ItemIndex %>' CssClass="btn-mas-menos" />
@@ -29,7 +28,7 @@
                 <asp:Button ID="btnAgregar" runat="server" Text="Agregar a la Carretilla"
                     CommandName="Agregar"
                     CommandArgument='<%# Eval("IdPro") + "|" + Container.ItemIndex %>'
-                    CssClass="boton-verde" />
+                    CssClass="boton-azul" />
             </div>
         </ItemTemplate>
     </asp:Repeater>

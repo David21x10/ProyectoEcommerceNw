@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Administrador.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="ProyectoEcommerceNw.Carrito" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-<link href="estilos/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="estilos/estilo.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -17,6 +17,7 @@
                     <div class="card mb-4 shadow-sm" style="width: 350px;">
                         <div class="card-body text-center">
                             <h5 class="card-title"><%# Eval("NomPro") %></h5>
+                            <p class="oculto">ID Producto: <%# Eval("IdPro") %></p>
                             <p class="card-text mb-1">Precio unitario: <strong>L <%# Eval("PrePro") %></strong></p>
 
                             <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
@@ -41,7 +42,7 @@
             <asp:Label ID="lblTotal" runat="server" CssClass="h4 text-success fw-bold" />
         </div>
 
-        <asp:Button ID="btnPagar" runat="server" Text="Pagar ahora" CssClass="btn-pagar" OnClientClick="alert('Grcias por su compra'); return false;" />
+<asp:Button ID="btnPagar" runat="server" Text="Facturar compra" CssClass="btn-pagar" OnClick="btnPagar_Click" />
 
     </div>
 </asp:Content>

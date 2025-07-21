@@ -1,0 +1,62 @@
+﻿.factura-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.info-factura p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.detalle-productos {
+    margin-top: 20px;
+}
+
+.tabla-productos {
+    margin-bottom: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .tabla-productos th,
+    .tabla-productos td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .tabla-productos th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+
+.btn-pagar {
+    background-color: #3399FF;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.3);
+}
+
+    .btn-pagar:hover {
+        background-color: #7cd07c;
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 128, 0, 0.5);
+    }
+
+    .btn-pagar:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2);
+    }

@@ -18,11 +18,13 @@ namespace ProyectoEcommerceNw
                 if (Session["Carrito"] == null)
                 {
                     DataTable dt = new DataTable();
+                    dt.Columns.Add("IdPro");
                     dt.Columns.Add("NomPro");
                     dt.Columns.Add("PrePro");
                     dt.Columns.Add("Cantidad", typeof(int));
                     Session["Carrito"] = dt;
                 }
+
             }
         }
 
@@ -53,18 +55,20 @@ namespace ProyectoEcommerceNw
                 TextBox txtCantidad = (TextBox)rptCatalogo.Items[itemIndex].FindControl("txtCantidad");
                 int cantidad = int.Parse(txtCantidad.Text);
 
-                DataRow producto = conexion.ObtenerProductos(id); 
+                DataRow producto = conexion.ObtenerProductos(id);
 
                 if (producto != null)
                 {
                     DataTable carrito = (DataTable)Session["Carrito"];
                     DataRow fila = carrito.NewRow();
+                    fila["IdPro"] = id;  
                     fila["NomPro"] = producto["NomPro"];
                     fila["PrePro"] = producto["PrePro"];
                     fila["Cantidad"] = cantidad;
                     carrito.Rows.Add(fila);
                     Session["Carrito"] = carrito;
                 }
+
                 Response.Write("<script>alert('Producto agregado al carrito')</script>");
 
             }

@@ -1,0 +1,72 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.cobro-container {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+    .cobro-container h2 {
+        color: #2ecc71;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .cobro-container p {
+        font-size: 18px;
+        color: #333;
+        margin: 10px 0;
+    }
+
+
+.grid-vendidos {
+    margin-bottom: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .grid-vendidos th,
+    .grid-vendidos td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .grid-vendidos th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+
+.btn-seguir {
+    background-color: #3399FF;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.3);
+}
+
+    .btn-seguir:hover {
+        background-color: #7cd07c;
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 128, 0, 0.5);
+    }
+
+    .btn-seguir:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2);
+    }

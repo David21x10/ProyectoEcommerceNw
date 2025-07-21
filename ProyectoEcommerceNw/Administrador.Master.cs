@@ -11,7 +11,26 @@ namespace ProyectoEcommerceNw
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                if (Session["usuario"] != null)
+                {
+                    lblUsuario.Text = Session["usuario"].ToString();
+                    linkLogin.Attributes["style"] = "pointer-events: none; color: gray; text-decoration: none;";
+                    linkLogin.InnerText = "Sesión iniciada";
+                }
+                else
+                {
+                    lblUsuario.Text = "";
+                }
+            }
 
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("Catalogo.aspx");
         }
     }
 }

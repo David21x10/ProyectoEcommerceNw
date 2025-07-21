@@ -26,14 +26,15 @@ namespace ProyectoEcommerceNw
                 rptCarrito.DataBind();
 
                 decimal total = 0;
-                foreach (DataRow row in carrito.Rows)
+                foreach (DataRow fila in carrito.Rows)
                 {
-                    decimal precio = Convert.ToDecimal(row["PrePro"]);
-                    int cantidad = Convert.ToInt32(row["Cantidad"]);
+                    string idProducto = fila["IdPro"].ToString();
+                    decimal precio = Convert.ToDecimal(fila["PrePro"]);
+                    int cantidad = Convert.ToInt32(fila["Cantidad"]);
                     total += precio * cantidad;
                 }
 
-                lblTotal.Text = "Total a pagar: L " + total.ToString("N2");
+                lblTotal.Text = "Precio acumulado en el carrito: L " + total.ToString("N2");
             }
             else
             {
@@ -64,6 +65,25 @@ namespace ProyectoEcommerceNw
             Session["Carrito"] = carrito;
             MostrarCarrito();
         }
+
+        protected void btnPagar_Click(object sender, EventArgs e)
+        {
+            if (Session["usuario"] == null)
+            {
+                string script = "alert('Debes iniciar sesión para poder pagar.'); window.location.href = 'Login.aspx';";
+                ClientScript.RegisterStartupScript(this.GetType(), "loginRedirect", script, true);
+
+            }
+            else
+            {
+                
+                ClientScript.RegisterStartupScript(this.GetType(), "alerta", "alert('Redirigiendo para ultimar detalles');", true);
+                Response.Redirect("Facturacion.aspx");
+
+            }
+        }
+
+
 
     }
 }

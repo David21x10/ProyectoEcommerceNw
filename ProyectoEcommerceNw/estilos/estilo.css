@@ -19,7 +19,7 @@
 
     .card-producto .precio {
         font-size: 16px;
-        color: #2e8b57;
+        color: #3399FF;
         font-weight: bold;
     }
 
@@ -35,8 +35,8 @@
     text-align: center;
 }
 
-.boton-verde {
-    background-color: #2e8b57;
+.boton-azul {
+    background-color: #3399FF;
     color: white;
     border: none;
     padding: 10px;
@@ -46,7 +46,7 @@
 
 .titulo-catalogo {
     text-align: center;
-    color: #2e8b57;
+    color: #0066CC;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
     font-weight: 700;
@@ -85,13 +85,13 @@
     }
 
 h2 {
-    color: #2e8b57;
+    color: #0066CC;
     margin-bottom: 20px;
-    margin-top: 0; 
+    margin-top: 0;
     font-weight: 700;
     letter-spacing: 1px;
-    font-size: 2.5rem; 
-    text-align: center; 
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 
@@ -110,7 +110,7 @@ h2 {
 
 .card-title {
     font-size: 1.5rem;
-    color: #2e8b57;
+    color: #0066CC;
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -122,7 +122,7 @@ h2 {
 }
 
 .text-success {
-    color: #28a745 !important;
+    color: #3399FF !important;
 }
 
 .font-weight-bold {
@@ -194,7 +194,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 .titulo-carrito {
-    color: #2e8b57;
+    color: #0066CC;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -203,7 +203,7 @@ h2 {
     color: #555;
 }
 .btn-pagar {
-    background-color: #8ec33d;
+    background-color: #3399FF;
     border: none;
     padding: 12px 30px;
     font-size: 18px;
@@ -225,3 +225,10 @@ h2 {
         transform: scale(0.95);
         box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2);
     }
+
+.oculto {
+    display: none;
+}
+
+
+    
