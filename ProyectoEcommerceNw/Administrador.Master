@@ -47,12 +47,19 @@
 
        
         <footer class="main-footer">
-            <div class="footer-content">
-                <h2 id="titulofoot" class="h2Foot">JETSTEREO</h2>
-                <div class="footer-nav">
-                    <a href="#">MENÚ</a>
-                    <a href="#">INFORMACIÓN DE TIENDA</a>
-                </div>
+    <div class="footer-content">
+        <h2 id="titulofoot" class="h2Foot">JETSTEREO</h2>
+
+        <div class="sitemap-section">
+            <h3 class="sitemap-title">Mapa del sitio</h3>
+            <ul class="sitemap-links">
+                <li><a href="Inicio.aspx">Inicio</a></li>
+                <li><a href="Catalogo.aspx">Catálogo</a></li>
+                <li><a href="Carrito.aspx">Carrito</a></li>
+                <li><a href="Login.aspx">Iniciar Sesión</a></li>
+                <li><a href="#">Información de tienda</a></li>
+            </ul>
+        </div>
 
                 
                 <div class="social-media">

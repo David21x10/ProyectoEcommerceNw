@@ -183,6 +183,7 @@
     <Content Include="estilos\cobro.css" />
     <Content Include="estilos\estilo.css" />
     <Content Include="estilos\facturacion.css" />
+    <Content Include="estilos\inicio.css" />
     <Content Include="estilos\logincss.css" />
     <Content Include="estilos\styleadm.css" />
     <Content Include="Facturacion.aspx" />

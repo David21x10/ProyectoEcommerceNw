@@ -256,3 +256,42 @@ a:focus {
     .logout-btn:hover {
         background-color: #f1f1f1;
     }
+
+
+    /*para el sistemap*/
+
+.sitemap-section {
+    text-align: left;
+    margin-left: 40px;
+    color: white;
+}
+
+.sitemap-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sitemap-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .sitemap-links li {
+        margin-bottom: 8px;
+    }
+
+    .sitemap-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        font-size: 14px; 
+    }
+
+        .sitemap-links a:hover {
+            color: #66ccff;
+        }
+
+
