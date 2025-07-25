@@ -189,8 +189,14 @@
     <Content Include="Facturacion.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="img\ENVIO.jpg" />
     <Content Include="img\Jeststereo.jpg" />
+    <Content Include="img\LAPTOP.jpg" />
     <Content Include="img\Logo.png" />
+    <Content Include="img\MAUSE.jpg" />
+    <Content Include="img\PC.jpg" />
+    <Content Include="img\PS.jpg" />
+    <Content Include="img\ST.jpg" />
     <Content Include="Inicio.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
